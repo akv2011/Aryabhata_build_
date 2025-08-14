@@ -463,11 +463,77 @@
         ],
         "priority": "high",
         "subtasks": []
+      },
+      {
+        "id": 31,
+        "title": "Fine-tune Qwen2.5-7B with Unsloth on Kaggle",
+        "description": "Create a Kaggle notebook to fine-tune the Qwen2.5-7B model using Unsloth and the locally created JEE math dataset. The notebook will be built cell-by-cell.",
+        "details": "",
+        "testStrategy": "",
+        "status": "pending",
+        "dependencies": [],
+        "priority": "high",
+        "subtasks": []
+      },
+      {
+        "id": 32,
+        "title": "Load Qwen2.5-7B Model and Tokenizer",
+        "description": "Add a cell to the Kaggle notebook to load the Qwen2.5-7B model and tokenizer using Unsloth.",
+        "details": "",
+        "testStrategy": "",
+        "status": "pending",
+        "dependencies": [],
+        "priority": "high",
+        "subtasks": []
+      },
+      {
+        "id": 33,
+        "title": "Prepare Model for LoRA Fine-tuning",
+        "description": "Add a cell to the Kaggle notebook to prepare the model for LoRA fine-tuning.",
+        "details": "",
+        "testStrategy": "",
+        "status": "pending",
+        "dependencies": [],
+        "priority": "high",
+        "subtasks": []
+      },
+      {
+        "id": 34,
+        "title": "Load JEE Math Dataset",
+        "description": "Add a cell to the Kaggle notebook to load the local JEE math dataset.",
+        "details": "",
+        "testStrategy": "",
+        "status": "pending",
+        "dependencies": [],
+        "priority": "high",
+        "subtasks": []
+      },
+      {
+        "id": 35,
+        "title": "Format Dataset for Training",
+        "description": "Add a cell to the Kaggle notebook to format the dataset for training.",
+        "details": "",
+        "testStrategy": "",
+        "status": "pending",
+        "dependencies": [],
+        "priority": "high",
+        "subtasks": []
+      },
+      {
+        "id": 36,
+        "title": "Setup Trainer and Start Fine-tuning",
+        "description": "Add a cell to the Kaggle notebook to set up the trainer and start fine-tuning.",
+        "details": "",
+        "testStrategy": "",
+        "status": "pending",
+        "dependencies": [],
+        "priority": "high",
+        "subtasks": []
       }
     ],
     "metadata": {
       "created": "2025-08-13T16:45:00.040Z",
-      "updated": "2025-08-14T17:31:06.492Z",
+      "updated": "2025-08-14T19:52:12.898Z",
       "description": "Tasks for master context"
     }
   }
