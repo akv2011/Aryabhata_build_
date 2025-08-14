@@ -1,0 +1,127 @@
+# Superior JEE Math AI Model - Product Requirements Document
+
+## Project Overview
+**Project Name:** Aryabhata-Superior
+**Objective:** Build a state-of-the-art JEE mathematics AI model that surpasses existing solutions like PhysicsWallah's Aryabhata-1.0
+**Target Performance:** >95% accuracy on JEE Main, >90% on JEE Advanced
+**Architecture:** Advanced transformer-based model with specialized mathematical reasoning capabilities
+
+## Current Baseline Analysis
+**Existing Model:** PhysicsWallah Aryabhata-1.0
+- 86% JEE Main January 2025, 90.2% JEE Main April 2025
+- 7B parameters, ~2K token efficiency
+- Based on Qwen2.5-Math-7B + model merging + RLVR
+
+## Core Requirements
+
+### 1. Data Collection & Processing
+- **JEE Question Dataset:** Comprehensive collection from 2010-2025
+- **Web Scraping:** Extract questions from multiple educational platforms
+- **PDF Processing:** Convert JEE question papers using LangExtract/advanced OCR
+- **Data Quality:** Clean, categorized, and verified question-answer pairs
+- **Target Size:** 500K+ high-quality JEE math problems
+
+### 2. Advanced Model Architecture
+- **Base Model Selection:** Compare Qwen2.5-Math-7B vs Llama-3.1-8B vs DeepSeek-Math
+- **Custom Architecture:** Implement mathematical reasoning layers
+- **Multi-Modal Support:** Handle diagrams, graphs, and mathematical notation
+- **Token Efficiency:** Optimize for <1.5K tokens per problem (better than Aryabhata-1.0)
+
+### 3. Training Pipeline
+- **Stage 1:** Mathematical Foundation Training
+- **Stage 2:** JEE-Specific Fine-tuning
+- **Stage 3:** Reinforcement Learning with Mathematical Rewards
+- **Stage 4:** Advanced RLHF with expert feedback
+- **Evaluation:** Continuous benchmarking against JEE papers
+
+### 4. Technical Infrastructure
+- **Hardware Requirements:** Multi-GPU training setup optimization
+- **Memory Optimization:** Gradient checkpointing, mixed precision
+- **Distributed Training:** Implementation for scalability
+- **Monitoring:** Comprehensive training metrics and logging
+
+### 5. Model Capabilities
+- **Problem Types:** MCQ, Numerical, Theoretical proofs
+- **Topics:** Algebra, Calculus, Coordinate Geometry, Trigonometry, Probability
+- **Reasoning:** Step-by-step mathematical reasoning with verification
+- **Explanation:** Clear pedagogical explanations
+- **Speed:** Sub-second inference for real-time applications
+
+### 6. Evaluation Framework
+- **JEE Benchmarks:** Historical papers 2015-2025
+- **Custom Metrics:** Mathematical accuracy, reasoning quality
+- **Comparative Analysis:** Against GPT-4, Claude, Aryabhata-1.0
+- **Edge Cases:** Complex multi-step problems, trick questions
+
+### 7. Deployment & Optimization
+- **Quantization:** 4-bit/8-bit optimization for 16GB GPU
+- **Inference Optimization:** vLLM, TensorRT integration
+- **API Development:** FastAPI-based serving infrastructure
+- **Model Packaging:** Containerized deployment options
+
+## Technical Specifications
+
+### Data Requirements
+- **Format:** JSON with structured problem-solution pairs
+- **Fields:** Question text, diagrams, solution steps, final answer, difficulty
+- **Languages:** English, Hindi mathematical terms
+- **Quality Control:** Multi-stage verification process
+
+### Training Requirements
+- **Compute:** 4x A100 or 8x RTX 4090 equivalent
+- **Storage:** 2TB SSD for datasets and checkpoints
+- **Time:** 4-6 weeks training pipeline
+- **Memory:** Optimized for available hardware
+
+### Performance Targets
+- **JEE Main Accuracy:** >95%
+- **JEE Advanced Accuracy:** >90%
+- **Inference Speed:** <2 seconds per problem
+- **Model Size:** <10B parameters for deployment efficiency
+- **Memory Usage:** Runnable on 16GB GPU
+
+## Implementation Phases
+
+### Phase 1: Data Foundation (Week 1-2)
+- Web scraping infrastructure
+- PDF processing pipeline
+- Data cleaning and validation
+- Initial dataset of 100K problems
+
+### Phase 2: Model Development (Week 3-4)
+- Base model comparison and selection
+- Custom architecture implementation
+- Initial training experiments
+- Baseline performance establishment
+
+### Phase 3: Advanced Training (Week 5-8)
+- Full-scale training pipeline
+- RLHF implementation
+- Performance optimization
+- Comprehensive evaluation
+
+### Phase 4: Deployment & Testing (Week 9-10)
+- Model quantization and optimization
+- Deployment infrastructure
+- Real-world testing
+- Performance benchmarking
+
+## Success Metrics
+- **Primary:** >95% accuracy on JEE Main 2025 papers
+- **Secondary:** Better token efficiency than Aryabhata-1.0
+- **Tertiary:** Deployable on consumer 16GB GPU hardware
+- **Quality:** Clear, pedagogically sound explanations
+
+## Risk Mitigation
+- **Data Quality:** Multi-source validation
+- **Compute Constraints:** Efficient training strategies
+- **Overfitting:** Robust evaluation methodology
+- **Deployment:** Comprehensive testing pipeline
+
+## Resources & Dependencies
+- **Libraries:** transformers, torch, datasets, langextract, beautifulsoup
+- **Infrastructure:** Cloud GPU access or local high-end hardware
+- **Data Sources:** Educational websites, official JEE papers
+- **Evaluation:** Custom benchmarking framework
+
+This project aims to create the most advanced JEE mathematics AI model, leveraging cutting-edge techniques and comprehensive data to achieve unprecedented performance in Indian competitive exam mathematics.
